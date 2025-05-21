@@ -1,0 +1,89 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+}
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 999;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.title h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.title p {
+  margin: 0;
+  color: teal;
+  font-size: 18px;
+}
+nav {
+  margin-top: 15px;
+}
+.nav-tabs {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+}
+.nav-tabs li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+}
+.nav-tabs li a.active {
+  border-bottom: 3px solid teal;
+  color: teal;
+}
+.section {
+  background: white;
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.highlight {
+  width: 80px;
+  height: 5px;
+  background: gold;
+  margin-bottom: 20px;
+}
+.section h2 {
+  font-size: 32px;
+  margin: 0;
+}
+footer {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
